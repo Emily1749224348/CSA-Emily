@@ -1,0 +1,88 @@
+.container {
+    box-sizing:border-box;/*怪异盒模型*/
+    margin:0 auto;
+    padding:0 auto;
+    border: #788a6f solid 3px;
+    border-radius: 10px;
+    width:400px;
+    height:500px;
+    background-color: #a8b78c;
+    overflow:scroll-disable-line;
+}
+.header {
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    color: #696268;
+    margin-left:24%;
+    margin-bottom:2px;
+    margin-top:0;
+}
+.new-task {
+    margin-left:20%;
+    margin-top:2px;
+}
+.new-task input {
+    width:200px;
+    height:26px;
+    border:none;
+    background-color: #fbf2e3 ;
+    border-radius:10px;
+}
+.new-task input:focus{
+    background-color:antiquewhite;
+    border-color:#788a6f;
+    outline:none;
+}
+.add {
+    height:26px;
+    width:fit-content;
+    border:none;
+    border-radius:10px;
+}
+.add:hover {
+    cursor:pointer;
+    background-color:#788a6f;
+    color:#fbf2e3;
+}
+.add:active{
+    background-color: #788a6f9d;
+}
+
+.todo-text {
+    padding:0 auto;
+    margin:0 auto;
+    text-align: center;
+    display:inline-block;
+    font-family:"楷书";
+    
+}
+
+.todo-item {
+   
+    width:300px;
+    height:25px;
+    border:#5d7259 4px solid;
+    border-radius:10px;
+    margin:0 auto;
+    padding:0 ;
+    margin-top:4px;
+    text-align: center;
+    color:black;
+}
+
+.checkbox {
+    height:auto;
+    width:50px;
+    float:right;
+    margin-right:10px;
+    margin-top:4px;
+    background:none;
+    color:#696268;
+    border:none;
+   
+}
+.checkbox:hover{
+    cursor:pointer;
+    border-radius:20px;
+    background-color:  #788a6f;
+    color:#fbf2e3;
+}

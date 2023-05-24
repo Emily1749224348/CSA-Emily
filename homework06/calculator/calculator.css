@@ -1,0 +1,65 @@
+/*计算器*/
+body {
+    background-color:#3c6382;
+}
+
+.cal{
+    box-sizing:border-box;
+    background:white; 
+    margin:0 auto;
+    padding:  0 auto;
+    padding-top: 10px;
+    width:400px;
+    height:600px;
+    /* box-shadow: 0 0 20px #0a3d62 */
+    border-radius:4px;
+}
+input {
+    width:300px;
+    height: 50px;
+    display:block;
+    margin-left:50px;
+    margin-top: 10px;
+    font-size:30px;
+    border-radius:4px;
+}
+input:focus{
+    outline-style: solid;
+    outline-color:#0a3d62;
+    outline-width:4px;
+    background:#fa983a;
+
+}
+span {
+    box-sizing: border-box;
+    position:relative;
+    background: #0a3d62;
+    display:inline-block;
+    padding-top:10px;
+    width:80px;
+    height:80px;
+    margin-left:10px;
+    margin-top:10px;
+    text-align:center;
+    font-family: Geneva;
+    font-size:40px;
+    color:aliceblue;
+    
+}
+
+span:hover{
+    background:#fa983a;
+    cursor:pointer;
+}
+.op:hover, .delete:hover {
+    background:#e55039;
+}
+span:active{
+    background:#f18928;
+}
+.op:active{
+    background:#eb2f06;
+}
+p {
+    color:azure;
+}

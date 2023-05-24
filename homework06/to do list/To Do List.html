@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TO DO LIST</title>
+    <link rel="stylesheet" href="toDoList.css">
+</head>
+<body>
+    <div class="container">  <!--总盒子-->
+        <!-- 头 -->
+        <div class="header">
+            <div >
+                <h1>TO DO LIST</h1>
+            </div>
+        </div>
+          <!-- 新任务 -->
+        <div class="new-task">
+            <input type="text" placeholder="点击按钮或者按下回车键" id="textbox">
+            <button class="add">add</button>
+        </div>
+        <div class="todo-list">
+            <div class="todo-content">
+
+                <div class="todo-item">
+                    <div class="todo-text">下班后去拿快递</div>
+                    <input type="submit" value="delete"  class="checkbox">
+                </div>
+                <div class="todo-item">
+                    <div class="todo-text">背单词</div>
+                    <input type="submit" value="delete"  class="checkbox">
+                </div>
+                <div class="todo-item">
+                    <div class="todo-text">做数学作业</div>
+                    <input type="submit" value="delete"  class="checkbox">
+                </div>
+            </div>  
+            <div class = "done-content">
+
+            </div>
+          
+            
+        </div>
+      
+    </div>
+
+
+
+    <script src="toDoList.js"></script>
+</body>
+</html>
