@@ -1,0 +1,14 @@
+/*********
+*页面的小icon、小部件
+*/
+
+/* 版权图标 */
+.white_icon {
+    background-image: url("/images/right.png");
+    width:8px;
+    height:8px;
+    top:7px;
+    right:0;
+    left:65px;
+    background-size: cover;
+}

@@ -1,0 +1,81 @@
+*{
+    margin:0;
+    padding:0;
+    list-style-type:none;
+}
+
+.banner{
+    margin:auto;
+    width: 600px;
+    border: 1px solid black;
+    height:350px;
+    position:relative;
+    overflow:hidden; 
+}
+/* 轮播图里的图片 */
+.imgList {
+    list-style: none;
+    position:absolute;
+}
+
+.imgList img {
+    width:600px;
+    height: 350px;
+}
+.imgList li {
+    float: left;
+    margin-right: 20px;
+}
+/* 切换图片的按钮 */
+.banner .previous,
+.banner .next{
+    box-sizing: border-box;
+    position: absolute;
+    /* 下面两句实现按钮垂直居中 */
+    top:50%;
+    transform: translateY(-50%);
+    width: 40px;
+    height: 40px;
+    margin-left: 5px;
+    border-radius: 50%;
+    background-color: rgba(0,0,0,.5);
+    font: 700 20px;
+    color:#fff;
+    text-align: center;
+    padding-top:8px;
+}
+/* 将next按钮移到右边 */
+.banner .next{
+    right:5px;
+}
+.banner .previous:hover,
+.banner .next:hover{
+    cursor: pointer;
+    background-color: rgba(0,0,0,.7);
+}
+/*小圆点*/
+.circle {
+    position:absolute;
+    bottom: 15px;
+    left: 10%;
+    /* transform: translateX(-50%); */
+}
+.circle a{
+    width:15px;
+    height: 15px;
+    background:#fff;
+    display:block;
+    border-radius: 50%;
+    opacity: .5;/*透明度*/
+    float: left;
+    margin-right: 5px;
+    cursor: pointer;
+}
+.circle a.hover {
+    background:#fff;
+    opacity:.8;
+}
+.circle a:hover {
+    background:#fff;
+    opacity:.8;
+}

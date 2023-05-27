@@ -1,0 +1,16 @@
+/*************
+*    公共属性
+*/
+
+.pr{
+    position: relative;
+}
+.pa{
+    position:absolute;
+}
+.fl{
+    float:left;
+}
+.fr{
+    float:right;
+}
