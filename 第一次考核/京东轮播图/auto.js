@@ -5,6 +5,10 @@ window.onload = function () {
     var imgListLi = imgList.children;
     var circleA = circle.children;
     var flag = true;
+
+    let btnL =document.getElementsByClassName("previous")[0];
+    let btnR = document.getElementsByClassName("next")[0];
+
     imgList.style.width = imgList.children.length * 620 + 'px';
     for (var i = 0; i < imgList.children.length; i++) {
         var aNode = document.createElement('a');
@@ -29,7 +33,7 @@ window.onload = function () {
             circleChange();
         }
     })
-    function antoChange() {
+    function autoChange() {
         setInterval(function () {
             if (flag) {
                 flag = false;
@@ -63,5 +67,6 @@ window.onload = function () {
             }
         }, 10)
     }
-    antoChange();
+autoChange();
 }
+
