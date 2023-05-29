@@ -1,81 +1,71 @@
 *{
     margin:0;
     padding:0;
-    list-style-type:none;
 }
-
+body{
+    display:flex;
+    justify-content:center;
+}
 .banner{
-    margin:auto;
-    width: 600px;
-    border: 1px solid black;
-    height:350px;
+  
+    display:flex;
+    flex-direction: column;
     position:relative;
-    overflow:hidden; 
+    align-content: center;
+    box-shadow: 0 0 8px #333;
+    width:700px;
+    height:500px;
+
 }
-/* 轮播图里的图片 */
-.imgList {
-    list-style: none;
+.slider{
     position:absolute;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    bottom:10px;
+    width:380px;
+
+}
+.slider span{
+    user-select: none;
+    width:20px;
+    height:20px;
+    line-height:45px;
+    background-color:white;
+    opacity:.5;
+    text-align: center;
+    justify-content:center;
+    border-radius:50%;
+    display: flex;
+    margin-left:5%;
+    font-size:10px;
+    color:rgba(0,0,0,0)
 }
 
-.imgList img {
-    width:600px;
-    height: 350px;
+.slider span:hover{
+    cursor:pointer;
+    background-color: red;
 }
-.imgList li {
-    float: left;
-    margin-right: 20px;
-}
-/* 切换图片的按钮 */
-.banner .previous,
-.banner .next{
-    box-sizing: border-box;
-    position: absolute;
-    /* 下面两句实现按钮垂直居中 */
-    top:50%;
-    transform: translateY(-50%);
-    width: 40px;
-    height: 40px;
-    margin-left: 5px;
-    border-radius: 50%;
-    background-color: rgba(0,0,0,.5);
-    font: 700 20px;
-    color:#fff;
-    text-align: center;
-    padding-top:8px;
-}
-/* 将next按钮移到右边 */
-.banner .next{
-    right:5px;
-}
-.banner .previous:hover,
-.banner .next:hover{
-    cursor: pointer;
-    background-color: rgba(0,0,0,.7);
-}
-/*小圆点*/
-.circle {
+
+.btn_wrap span{
+    user-select: none;
     position:absolute;
-    bottom: 15px;
-    left: 10%;
-    /* transform: translateX(-50%); */
+    width:40px;
+    height:85px;
+    line-height:85px;
+    top:40%;
+    text-align: center;
+    font-size:32px;
+    color:#fff;
+    background-color:rgba(0,0,0,.4)
 }
-.circle a{
-    width:15px;
-    height: 15px;
-    background:#fff;
-    display:block;
-    border-radius: 50%;
-    opacity: .5;/*透明度*/
-    float: left;
-    margin-right: 5px;
-    cursor: pointer;
+.btn_wrap span:hover{
+    background-color:rgba(0,0,0,.8);
+    cursor:pointer;
 }
-.circle a.hover {
-    background:#fff;
-    opacity:.8;
+.btnL{
+left:0;
 }
-.circle a:hover {
-    background:#fff;
-    opacity:.8;
+.btnR{
+    right:0
 }

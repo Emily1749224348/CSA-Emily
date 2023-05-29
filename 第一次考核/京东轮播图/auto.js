@@ -1,72 +1,51 @@
-window.onload = function () {
-    var imgList = document.querySelector('.imgList');
-    var circle = document.querySelector('.circle');
-    var thisIndex = 0;
-    var imgListLi = imgList.children;
-    var circleA = circle.children;
-    var flag = true;
+let oPic = document.querySelector('#pic');
+let oSlider = document.querySelector('.slider');
+let index = 0;
 
-    let btnL =document.getElementsByClassName("previous")[0];
-    let btnR = document.getElementsByClassName("next")[0];
+let btnL = document.querySelector('.btnL');
+let btnR = document.querySelector('.btnR');
 
-    imgList.style.width = imgList.children.length * 620 + 'px';
-    for (var i = 0; i < imgList.children.length; i++) {
-        var aNode = document.createElement('a');
-        aNode.setAttribute('index', i);	//设置自定义属性
-        if (i == 0) {
-            aNode.className = 'hover';
-        }
-        circle.appendChild(aNode);
+//事件里面只做index修改
+oSlider.onclick = function(e){
+    if(e.target.tagName.toLowerCase() === 'span'){
+        change_slider(()=>{
+            index = e.target.innerText -1 ;
+        })
     }
-    circle.addEventListener('click', function (e) {
-        if (flag) {
-            flag = false;
-            // console.log(e.target);
-            if (e.target.nodeName != 'A') {
-                return false;
-            }
-            thisIndex = e.target.getAttribute('index');
-            // imgList.style.left = -thisIndex * 620 + 'px';
-            slow(imgList, -thisIndex * 620, function () {
-                flag = true;
-            });
-            circleChange();
-        }
-    })
-    function autoChange() {
-        setInterval(function () {
-            if (flag) {
-                flag = false;
-                if (thisIndex >= circleA.length) {
-                    thisIndex = 0;
-                }
-                slow(imgList, -thisIndex * 620, function () {
-                    flag = true;
-                });
-                circleChange();
-                thisIndex++;
-            }
-        }, 3000);
-    }
-    function circleChange() {
-        for (var i = 0; i < circleA.length; i++) {
-            circleA[i].className = '';
-        }
-        circleA[thisIndex].className = 'hover';
-    }
-    function slow(obj, target, callback) {
-        obj.myInter = setInterval(function () {
-            var offsetLeft = obj.offsetLeft;
-            var num = (target - offsetLeft) / 10;
-            num > 0 ? num = Math.ceil(num) : num = Math.floor(num);
-            if (offsetLeft == target) {
-                clearInterval(obj.myInter);
-                callback && callback();
-            } else {
-                obj.style.left = offsetLeft + num + 'px';
-            }
-        }, 10)
-    }
-autoChange();
 }
 
+btnR.onclick = function(){
+    change_slider(()=>{
+        index++;
+        index %= 8;
+    });
+}
+
+btnL.onclick = function() {
+    change_slider(()=>{
+        index--;
+    index = (8 + index) % 8;
+    });   
+}
+
+
+//换图片的函数
+function change_pic(){
+    oPic.src = `q${index+1}.jpg`;
+}
+
+//只负责根据index修改需要展示的图片 和 小圆点的颜色修改
+function change_slider(callback){
+    oSlider.children[index].style.background = 'white';
+    callback && callback();
+    //激活新的小圆点 和 换图 一定要在回调函数改变 index 之后
+    change_pic();
+    oSlider.children[index].style.background = 'red';
+}
+
+t = setInterval(()=>{
+    change_slider(()=>{
+        index++;
+        index%=8;
+    })
+},3000)
