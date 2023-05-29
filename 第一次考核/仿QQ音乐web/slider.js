@@ -25,7 +25,7 @@ circle_event()
 button_event()
 btn_animation()
 //定时轮播功能
-t=setInterval(()=>{timer();},1000*timee)
+t=setInterval(()=>{autoChange();},1000*timee)
 
 //指针悬浮时禁止自动轮播
 
