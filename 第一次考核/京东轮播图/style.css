@@ -11,12 +11,33 @@ body{
     display:flex;
     flex-direction: column;
     position:relative;
+    margin-top:30px;
     align-content: center;
     box-shadow: 0 0 8px #333;
     width:700px;
     height:500px;
 
 }
+.banner .playlist{
+    position: absolute;
+    top:0;
+    left:0;
+}
+
+.banner .playlist img{
+    width:700px; 
+    height: 500px;
+}
+.banner .playlist li{
+    position:absolute;
+    list-style-type:none;
+    display:none;
+}
+.playlist li.on{
+    display:block;
+}
+
+/*   小圆点*/
 .slider{
     position:absolute;
     display:flex;
@@ -39,13 +60,20 @@ body{
     display: flex;
     margin-left:5%;
     font-size:10px;
-    color:rgba(0,0,0,0)
+    color:rgba(0,0,0,0);
+    cursor:pointer;
 }
 
 .slider span:hover{
+   
+    background-color: red;
+}
+
+.slider span.active{
     cursor:pointer;
     background-color: red;
 }
+
 
 .btn_wrap span{
     user-select: none;

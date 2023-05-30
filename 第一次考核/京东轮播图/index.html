@@ -10,21 +10,29 @@
  
 <body>
 	<div class="banner">
-		<img src="q1.jpg" width="700px" height="500px" id="pic"> 
-		<div class="slider">
-			<span style="background-color:red">1</span><span>2</span>
-			<span>3</span>
-			<span>4</span>
-			<span>5</span>
-			<span>6</span>
-			<span>7</span>
-			<span>8</span>
+		<ul class="playlist">
+			<li class="on"><img src="q1.jpg"> </li>
+			<li><img src="q2.jpg"> </li>
+			<li><img src="q3.jpg"> </li>
+			<li><img src="q4.jpg"> </li>
+			<li><img src="q5.jpg"> </li>
+			<li><img src="q6.jpg"> </li>
+			<li><img src="q7.jpg"> </li>
+			<li><img src="q8.jpg"> </li>
+		</ul>
+		
+		<div class="slider"><!--指示器根据li数量动态生成-->
+			
 		</div>
 		<div class="btn_wrap">
 			<span class="btnL">&lt</span>
 			<span class="btnR">&gt</span>
 		</div>
 	</div>
+	<div style="display:block">
+		<p>
+		功能：点击圆钮轮播，左右按钮轮播，定时器轮播
+	</p></div>
 	<script src="auto.js"></script>
 </body>
 </html>
