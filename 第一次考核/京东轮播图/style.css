@@ -2,26 +2,25 @@
     margin:0;
     padding:0;
 }
-body{
-    display:flex;
-    justify-content:center;
-}
+
 .banner{
-  
-    display:flex;
-    flex-direction: column;
+    flex-direction: column; 
     position:relative;
     margin-top:30px;
+    margin-left:80px;
     align-content: center;
     box-shadow: 0 0 8px #333;
     width:700px;
     height:500px;
-
+    overflow:hidden;
 }
 .banner .playlist{
-    position: absolute;
-    top:0;
-    left:0;
+    width:800%;
+    /* position: absolute; */
+    /* transform: translateX(7%);
+    transition:1s;
+    transition-timing-function: linear;
+    transition-property: margin-left; */
 }
 
 .banner .playlist img{
@@ -29,13 +28,13 @@ body{
     height: 500px;
 }
 .banner .playlist li{
-    position:absolute;
-    list-style-type:none;
-    display:none;
+    list-style: none;
+    float:left;
 }
-.playlist li.on{
+
+/* .playlist li.on{
     display:block;
-}
+} */
 
 /*   小圆点*/
 .slider{

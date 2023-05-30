@@ -1,3 +1,4 @@
+//本js文件实现轮播图的原理是各个图片采用绝对定位，改变它们的display属性
 let slidePic = document.querySelectorAll('.playlist>li'),//轮播图片
     oSlider = document.querySelector('.slider');//轮播指示器
 let index = 0;
