@@ -64,7 +64,7 @@ function move(callback){
 			//callback为修改index的代码
 	callback && callback();
     slider.children[index].className = 'active'  ;
-    animation(playlist,-index*picWidth)
+    animation(playlist,-index*picWidth);
 //	playlist.style.marginLeft = `${-index*picWidth}px`;
 }
 
@@ -89,10 +89,10 @@ function animation(obj,target){
     var speed  = (target - obj.offsetLeft) / 100;
     t=setInterval(()=>{
         obj.style.marginLeft = `${obj.offsetLeft + speed}px`;
-    },10)
+    },15)
     setTimeout(()=>{
         clearInterval(t);
-    },1000)
+    },1500)
 }
 
 //实现自动轮播，并且在鼠标移入轮播图的时候停止轮播

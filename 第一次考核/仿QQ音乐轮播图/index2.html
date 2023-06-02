@@ -11,7 +11,7 @@
 <body>
     <div class="Wrap">
         <!-- 轮播图大框，开始 -->
-        <div class="mod_slide_box">
+    <div class="mod_slide_box">
             <!-- 主体内容，开始  包括标题，图片，小圆点-->
         <div class="inner_section">
 
@@ -22,7 +22,7 @@
 
            <!-- tab栏 -->
             <div class="mod_index_tab">
-                <a class="index_tab_item index_tab_item--current">为你推荐</a>
+                <a class="index_tab_item index_tab_current">为你推荐</a>
                 <a class="index_tab_item">情歌</a>
                 <a class="index_tab_item">官方歌单</a>
                 <a class="index_tab_item">网络歌曲</a>
@@ -33,9 +33,7 @@
             <!-- 轮播图图文 -->
             <div class="mod_playlist"> 
 
-           
-   
-            <div class="mod_playlist_2">
+             <div class="mod_playlist_2">
               
                 <span class="PlayPage" id="Page1">
                     <ul>
@@ -226,24 +224,9 @@
                         </div></li>  
                     </ul>
                 </span>
-            </div>     
-
-            <!-- 两侧按钮，开始 -->
-        <div class="mod_slide_action">
-             <div class="btnLeft">&lt</div>
-            <div class="btnRight">&gt</div>
-            
-        </div>
+             </div>     
+                   
     
-        <!-- 轮播图小圆点 -->
-            <div class="mod_slide_switch">
-                <div class="circle">
-                    <a class="ca hover"></a><a class="ca"></a>
-                    <a class="ca"></a><a class="ca"></a>
-                    <a class="ca"></a>
-                </div>
-            </div>
-     <script src="slider.js"></script>
             </div>
 
             
@@ -252,11 +235,21 @@
             
 
           
-        <!-- 两侧按钮，结束 -->
+       
         </div>
         <!-- 轮播图大框，结束 -->
-       
+        <!-- 两侧的按钮 -->
+       <div class="btnBox">
+        <box class="prev">< </box>
+        <box class="next"> ></box>
+   </div> 
+   <!-- 两侧按钮，结束 -->
+   <!-- 指示器小圆点 -->
+    <div class="slide_circle">
     </div>
+
+    </div> 
+   
 <div style="position:relative; margin:30px;top:100px;">
     <h4>实现效果：</h4>
     <ul>
@@ -266,6 +259,7 @@
         <li>鼠标移入轮播图区域按钮滑动出现，移出后又消失</li>
         <li>鼠标放在图片上有动画效果</li>
     </ul>
-</div>
+</div> 
+<script src="slider2.js"></script>
 </body>
 </html>

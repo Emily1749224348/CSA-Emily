@@ -16,6 +16,7 @@ body{
     line-height: 1.5;
     font-family: poppin,Tahoma,Arial,\5FAE\8F6F\96C5\9ED1,sans-serif;
 }
-html {
+
+html{
     overflow-x: hidden;
 }
