@@ -26,24 +26,12 @@ let indexTap = {
 create_circle();
 click_event();
 btn_animation();
-// t = setInterval(()=>{
-//     slide(indexTap['next']);
-// },6000);
-
-//下面是一堆函数
-
+t = setInterval(()=>{
+slide(indexTap['next']);
+},6000);
 
 function click_event(){
-    // btnBox.addEventListener('click',function(e){
-    //     e = e || window.event;
-    //     if(e.target.tagName.toLowerCase() === "div"){
-    //        let btn = e.target.className;
-    //         if(indexTap[btn] && typeof indexTap[btn] === 'function'){
-    //             slide(indexTap[btn]);
-    //         }
-    //     }
-    // },false);
-    btnBox.addEventListener('click',function(e){
+   btnBox.addEventListener('click',function(e){
         if(indexTap[e.target.className]){
             slide(indexTap[e.target.className]);
         }
