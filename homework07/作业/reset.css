@@ -1,0 +1,35 @@
+* {
+    margin:0;
+    padding:0;
+    text-decoration:none;
+    user-select: none;
+}
+/*********
+*页面的小icon、小部件
+*/
+/*************
+*    公共属性
+*/
+
+.pr{
+    position: relative;
+}
+.pa{
+    position:absolute;
+}
+.fl{
+    float:left;
+}
+.fr{
+    float:right;
+}
+/* 版权图标 */
+.white_icon {
+    background-image: url("right.png");
+    width:8px;
+    height:8px;
+    top:7px;
+    right:0;
+    left:65px;
+    background-size: cover;
+}

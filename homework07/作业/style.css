@@ -1,0 +1,267 @@
+
+/* 最顶上的top条  */
+.m_top {
+    width:auto;
+    height:70px;
+    background: #242424;
+        
+}
+.m_top .wrap{
+    box-sizing: border-box;
+    width:1100px;
+    height:70px;
+    margin:0 auto;
+}
+/* logo 图标 */
+.logo{
+    /* float: left; */
+    width: 176px;
+    height :69px;
+    margin-top:10px;
+  
+    background-position: 0 0 ;
+    color:#fff;
+    font-family:"华文楷体";
+}
+.logo:hover{
+    cursor: pointer;
+}
+/* 导航栏 */
+.m_top .navWap {
+    float:left;
+}
+.m_top ul.navWap li {
+    float: left;
+    color: #ccc; 
+    padding: 0 19px;
+    text-align:center;
+    line-height:70px;
+    list-style-type: none;/*去掉列表小圆点*/
+}
+.m_top ul.navWap li.z_slt {
+    background: #000;
+    text-decoration: none;
+    color: #fff;
+}
+.m_top ul.navWap li:hover{
+    background: #000;
+    text-decoration: none;
+    color: #fff;
+    cursor:pointer;
+}
+/*hot*/
+.hot {
+    display:inline-block;
+    position: relative;
+    top: 10px;
+    left: -14px;
+    width: 30px;
+    height: 15px;
+   
+    background-color:red;
+    background-repeat: no-repeat;
+    font-size:10px;
+    color:white;
+   
+}
+/* 顶部搜索框  */
+.m_top .m_search {
+
+    width:158px;
+    height:32px;
+    
+    margin-top:19px;
+    
+    float: right;
+    background-position:0 -99px;
+    background-color: #fff;
+    border-radius:32px;
+}
+/* 搜索框内的放大镜图标 */
+.m_top .m_search img{
+    width:18px;
+    height:18px;
+    position:relative;
+    float:left;
+    left:5px;
+    
+    top:5px;
+}
+/* 搜索框内的input框 */
+.m_top .m_search input{
+    position:relative;
+    width:120px;
+    height:30px;
+    outline:none;
+    font-size:12px;
+    padding-left:4px;
+    border:none;
+    background:none;
+}
+
+/* 顶部的创作者中心 */
+.m_top .m_creator {
+    float: right;
+    width: 90px;
+    height: 32px;
+    margin: 19px 0 0 12px;
+    box-sizing:border-box;
+    padding-left: 16 px;
+    border: 1px solid #4F4F4F;
+    line-height: 33px;
+    color:#ccc;
+    border-radius: 20px;
+    font-size: 12px;
+    text-align:center;
+}
+
+.m_top .m_creator:hover {
+    border:1px solid #fff;
+}
+
+/* 登录按钮 */
+.m_top .loginBtn {
+    float: right;
+    height: 45px;
+    margin: 27px 0 0 20px;
+    padding: 0 22px 0 0;
+    background-position: right -47px;
+    background-image: none;
+    font-size: 12px;
+    color:#787878
+}
+/* 红色的导航栏 */
+.subNavWrap {
+    width: 100%;
+    height:35px;
+    background: #C20C0C;
+    border-bottom: 1px solid #a40011;
+}
+.subNavWrap .Wrap {
+    width:1100px;
+    height:34px;
+    margin: 0 auto;
+}
+
+.subNavWrap .Wrap li{
+    float: left;
+    color:#fff;
+    font-size :12px;
+    list-style-type: none;
+    height:34px;
+    line-height:34px;
+}
+
+.subNavWrap .Wrap em{
+    display: inline-block;
+    height: 20px;
+    padding:0 13px;
+    margin: 7px 17px 0;
+    border-radius: 20px;
+    line-height: 21px;
+    color:#fff;
+    font-style:normal;
+    cursor:pointer;
+}
+
+.subNavWrap .Wrap ul em:hover {
+    cursor:pointer;
+    background:#9B0909;
+}
+
+.subNavWrap .Wrap em.emBg {
+    background:#9B0909;
+}
+
+/* 轮播图，开始 */
+.sliderWrap {
+    display:block;
+    position:relative;
+    width:100%;
+    height:285px;
+   
+}
+.sliderWrap .Wrap{
+    position:relative;
+    width:982px;
+    height:285px;
+    margin-top:50px;
+}
+
+/* 轮播图，结束 */
+/*搜索框结果，开始*/
+.innertext{
+    position:relative;
+    margin-left:100px;
+    width:1000px;
+    height:500px;
+    border:1px solid #C20C0C;
+    overflow:scroll;
+
+}
+.searchResult{
+    width:100%;
+    height:22px;
+    background-color: #f5f3f3;
+    margin-bottom:2px;
+} 
+.searchResult h4 ,.searchResult p{
+    cursor:pointer;
+    position:absolute;
+    display:inline-block;
+    width:220px;
+    /*文字超过宽度时，隐藏并以省略号显示*/
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+
+}
+.searchResult h4 {
+    margin-left:2px;
+}
+.searchResult :nth-child(2){
+    position:absolute;
+    margin-left:300px;
+    color:rgb(99, 99, 99);
+}
+.searchResult :nth-child(3){
+    position:absolute;
+    color:rgba(160, 204, 235, 0.913);
+    font-weight:300;
+    margin-left:600px;
+}
+
+
+/*搜索框结果，结束*/
+/*动态推荐*/
+.recommend{
+    margin-top: 20px;
+    position:relative;
+    margin-left:100px;
+    width:1000px;
+    height:500px;
+    border:1px solid #c24f0c;
+    overflow:scroll;
+
+}
+.item{
+    /* display:inline-block; */
+    float:left;
+    width:150px;
+    height:250px;
+    margin:5px 2px;
+    overflow:hidden;
+}
+.item .itemPic img{
+    width:150px;
+    height:150px;
+
+}
+.item h4{
+    text-align: center;
+    font-size:15px;
+}
+.item p{
+    color:gray;
+    font-size:10px; text-align: center;
+}

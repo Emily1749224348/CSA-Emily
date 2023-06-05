@@ -1,18 +1,14 @@
 <!DOCTYPE html>
 <html lang="zh-cn">
 <head>
-    <meta charset="UTF-8">
+    <meta charset="UTF-7">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=2.0">
     <title>网易云音乐</title>
-    <!-- 浏览器CSS重置 -->
-    <link rel="stylesheet" href="CSS/reset.css">
-    <!-- 公共属性 -->
-    <link rel="stylesheet" href="CSS/utils.css">
-    <!-- 页面的小icon、小部件 -->
-    <link rel="stylesheet" href="CSS/widget.css">   
+     
     <!-- 首页 -->
-    <link rel="stylesheet" href="CSS/index.css">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
       <!--最顶上的top条，开始-->
@@ -42,8 +38,8 @@
 
             <!-- 顶部搜索框，开始 -->
             <div class="m_search fr pr">
-                <img src="images/fangdajing.png">
-                <input type="text" placeholder="音乐/视频/电台用户" class="fr pr">
+                <img src="fangdajing.png">
+                <input type="text" placeholder="音乐/视频/电台用户" class="fr pr" id="searchText">
             </div>
             <!-- 顶部搜索框，结束 -->
            
@@ -56,7 +52,7 @@
             <li><a href="#"><em class="emBg">推荐</em></a></li>
             <li><a href="#"><em>排行榜</em></a></li>
             <li><a href=#><em>歌单</em>
-                <img src="/CSA-Emily/第一次考核/自学项目：网易云web主页/images/right.png" class="white_icon fl pr">
+                <img src="right.png" class="white_icon fl pr">
             </a>
             </li>
             <li><a href="#"><em>主播电台</em></a></li>
@@ -73,9 +69,20 @@
     <!-- 首页轮播图，开始 -->
     <div class="sliderWrap pr">
         <div class="Wrap">
-
+            在搜索框输入想要搜索的内容，按下回车键，搜索结果会出现在结果框里。
+            需要先在终端启动 node app.js 才能成功发送请求
         </div>
     </div>
+    <div class="innertext">
+
+    </div>
+
+    动态推荐
+    <button id="updateButton">点击获取推荐歌单</button>
+    <div class="recommend">
+
+    </div>
     <!-- 首页轮播图，结束 -->
+    <script src="aaa.js"></script>
 </body>
 </html>
