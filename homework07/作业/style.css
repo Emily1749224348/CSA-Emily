@@ -265,3 +265,16 @@
     color:gray;
     font-size:10px; text-align: center;
 }
+/*按钮，点击获取推荐歌单*/
+#updateButton {
+    width:120px;
+    height:40px;
+    background:#C20C0C;
+    color:white;
+    font-family:华文仿宋;
+    cursor:pointer;
+    border:none;
+}
+#updateButton:hover{
+    background:#9B0909;
+}
