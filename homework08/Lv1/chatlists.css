@@ -1,0 +1,57 @@
+/*负责设置main中每一个条块儿*/
+*{
+    font-family: YouYuan;
+    box-sizing:border-box;
+}
+.chatlist {
+         display:flex;
+         flex-direction: column;
+         overflow-y: scroll;
+        overflow-x: hidden;
+        }
+.chatlist  .chatLi{
+        display:flex;
+        width:100%;
+        height:70px;
+        border-bottom:.2px solid #aaa;
+        flex-wrap: row;
+        justify-content: space-around;
+        align-items: center;
+        overflow-x: hidden;
+      }
+.chatLi img{
+        margin:0 10px 0;
+        width:50px;
+
+        height:50px;
+        border-radius:5px;
+      }
+      
+      .chatLi .name{
+        flex-grow:1;
+      }
+      .chatLi .name h3{
+        font-weight: 500;
+      }
+   .chatLi p{
+        color:#8d8d8d;
+      }
+      .chatLi .name{
+        flex-grow:1;
+      }
+      .chatLi .time{
+        display:flex;
+        flex-direction: row;
+        align-items: flex-start;
+        margin-right:10px;
+      }     
+
+       .bar{
+          width:100%;
+          height:30px;
+          background:#ece8e8;
+          color: #8a8a8a;
+          display:flex;
+          padding-left:4%;
+          align-items:center;
+       } 

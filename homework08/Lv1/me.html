@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>
+    *{
+        padding:0;
+        margin:0;
+        font-family: YouYuan;
+    }
+    header{
+        width:100%;
+        height:180px;
+        background-color:#f2f2f299 ;
+        display:flex;
+        flex-flow:row wrap;
+        justify-content: space-around;
+        align-items: center;
+    }
+    header .head{
+        width:80px;
+        height:80px;
+    
+    }
+    head :nth-child(2){
+        flex-grow:1;
+        
+    }
+    header p{
+        color:#aaa;
+    }
+
+    header img{
+        width:25px;
+        height:25px;
+    }
+     .intervalBar{
+        width:100%;
+        height:10px;
+        background:#f1f0f0;
+    }
+
+</style>
+<link rel="stylesheet" href="chatlists.css">
+</head>
+<body>
+    <main>
+        <header>
+            <img src="./WeChat/xi.jpg" class="head">
+        <div> 
+            <h2>喜羊羊</h2>
+            <p>微信号:Wesley0525</p>
+        </div>
+            <img src="./icons/二维码.png">
+            &gt
+        </header>
+        <div class="intervalBar"></div>
+<ul class="chatlist">
+        <li>
+            <div class="chatLi">
+             <div><img src="./icons/微信支付.png"></div>
+             <div class="name">  <h3>服务</h3>
+               </div>
+        </li>
+        <div class="intervalBar"></div>
+         <li>
+            <div class="chatLi">
+             <div><img src="./icons/正方体-线型.png"></div>
+             <div class="name">  <h3>收藏</h3>
+               </div>
+        </li>
+         <li>
+            <div class="chatLi">
+             <div><img src="./icons/图片.png"></div>
+             <div class="name">  <h3>朋友圈</h3>
+               </div>
+        </li>
+    <li>
+            <div class="chatLi">
+             <div><img src="./icons/卡包.png"></div>
+             <div class="name">  <h3>仅聊天的朋友</h3>
+               </div>
+        </li>
+         <li>
+            <div class="chatLi">
+             <div><img src="./icons/表情.png"></div>
+             <div class="name">  <h3>表情</h3>
+               </div>
+        </li>
+        <div class="intervalBar"></div>
+    <li>
+            <div class="chatLi">
+             <div><img src="./icons/设置.png"></div>
+             <div class="name">  <h3>设置</h3>
+               </div>
+        </li>
+        
+    </ul>
+    </main>
+
+</body>
+</html>
