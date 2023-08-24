@@ -2,13 +2,15 @@
   "devDependencies": {
     "@babel/core": "^7.21.8",
     "@babel/preset-env": "^7.21.5",
-    "webpack-cli": "^5.1.1"
+    "webpack": "^5.88.2",
+    "webpack-cli": "^5.1.4"
   },
   "name": "csa-emily",
   "version": "1.0.0",
   "main": "index.js",
   "dependencies": {
     "ansi-styles": "^3.2.1",
+    "axios": "^1.4.0",
     "babel-plugin-polyfill-corejs2": "^0.3.3",
     "babel-plugin-polyfill-corejs3": "^0.6.0",
     "babel-plugin-polyfill-regenerator": "^0.4.1",
@@ -76,5 +78,6 @@
     "url": "https://github.com/Emily1749224348/CSA-Emily/issues"
   },
   "homepage": "https://github.com/Emily1749224348/CSA-Emily#readme",
-  "description": ""
+  "description": "",
+  "type": "module"
 }

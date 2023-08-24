@@ -6,7 +6,7 @@ module.exports = {
     // mode:'production',//生产模式
 
     //入口  
-    entry: path.join(__dirname, './src/main.js'), // __dirname 是node的通用变量，代表当前项目路径
+    entry: path.join(__dirname, './index/html'), // __dirname 是node的通用变量，代表当前项目路径
     output: {
         // 配置打包后文件存放目录
         path: path.join(__dirname, './dist'),

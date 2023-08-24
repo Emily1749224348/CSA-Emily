@@ -87,7 +87,7 @@ button.addEventListener('click',function(){
 
     const xhr = new XMLHttpRequest();
   //2.初始化 设置请求方法和url
-     xhr.open("GET",`http://localhost:3000/personalized`);
+     xhr.open("GET",`https://api.hanling.space/personalized`);
   //3.发送
      xhr.send();
  
@@ -101,8 +101,8 @@ button.addEventListener('click',function(){
           let re = JSON.parse(xhr.response);
         //   result.innerText = re.name;
          // recommend.innerText = re;
-         console.log(re);
-         method['recommend'](re.result,'recommend');
+        console.log(re);
+        method['recommend'](re.result,'recommend');
           
         
       }else{
